@@ -2,7 +2,7 @@ PetStore-OOP-Java
 Hi, This is a simple Java project created for CS210 at Bellevue College to demonstrate OOP concepts. It includes classes for different pets (Rabbit, Betta Fish) and a PetStore main class that manages them.
 ---
 
-Project Overview
+## Project Overview
 
 In this assignment, I extended the original Pet program by creating **two new pet subclasses**:
 - Rabbit    : includes a 'coatColor' field  
@@ -15,14 +15,59 @@ The main program ('PetStore.java') was modified to:
 
 ---
 
-What I Learned
--Design a class hierarchy with inheritance and polymorphism.
--Override methods
+## What I Learned
+Through this project, I learned how to:
+- Design a class hierarchy with **inheritance and polymorphism**.
+- Use **ArrayList** to store and process different subclass objects together.
+- Override methods
+- Practice **encapsulation** by using private fields
+- getter/setter methods.
+- Understand how Scanner works for user input in a console application.
 
+This project helped me strengthen my understanding of OOP and improved my confidence in writing structured, modular Java programs.
 
 ---
 
-My note and tips
+## My note and tips for coding
+1. extends
+   Class Pet { vs class Rabbit extends Pet{  ---> This declares a subclass Rabbit that extends the Pet class.
+                                             ---> The extends keyword means Rabbit inherits all the properties and methods of Pet. 
+   
+2. private
+   private String name;  ---> means the variable can only be accessed within the (Pet) class
+
+3. Void: 
+  Public viod setCoatColar (Striing newCoatColar){    ---> allows other classes to set the value of coatColor  
+    coatColar = newCoatColar 
+  } 
+   
+4. Why I did not need to create a constructor in pet class, but some assignment I need?
+   It's because 'name' doesn't need to be initialized beforehand in this assignment, we set each pet’s name later by typing it in the console.
+   Besides, Java will automatically provide a pre-defined constructor (e.g., null, 0), so a constructor isn't needed.
+   
+5. Getter method:  
+  public String getNaame(){   ---> Getter method does not need an input parameters, but will return the current value of a field.
+    return name;              ---> **Before calling a getter, that field must already have a value, usually assigned by a constructor or setter method.**
+
+  }
+6. public void setName(String name) {    --->  Setter method requires an input parameter, and assigns it to the object's field, so it's no return.
+    this.name = name;                    --->  It updates the field's value so that the getter can later return it.
+  }                                    
+
+7. Override methods:
+    
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 
 
 ---
