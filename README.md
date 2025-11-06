@@ -43,7 +43,7 @@ This project helped me strengthen my understanding of OOP and improved my confid
 
    private String name;
    
-   ---> means the variable can only be accessed within the (Pet) class
+   ---> It means the variable can only be accessed within the (Pet) class.
    
 
 3. Void: 
@@ -52,7 +52,7 @@ This project helped me strengthen my understanding of OOP and improved my confid
     coatColar = newCoatColar 
    }
    
-   ---> allows other classes to set the value of coatColor
+   ---> Allows other classes to set the value of coatColor.
    
    
 4. Why I did not need to create a constructor in pet class, but some assignment I need?
@@ -94,14 +94,14 @@ This project helped me strengthen my understanding of OOP and improved my confid
 		return "I am a rabbit.";
 	}
 
-   ---> Rabbit class inherit all method from Pet class, include the speak method. Now overrided the speak method
+   ---> Rabbit class inherit all method from Pet class, include the speak method. Now overrided the speak method.
 
 
 8. java.util;
 
    import java.util.*;
 
-   ---> When we use ArrayList and Scanner, we have to write this code
+   ---> When we use ArrayList and Scanner, we have to write this code.
 
    ---> java.util is a utility package that includes many helpful classes such as Scanner, ArrayList, Random, Collections, HashMap, HashSet, etc.
 
@@ -116,11 +116,11 @@ This project helped me strengthen my understanding of OOP and improved my confid
     
     ---> ArrayList<Pet>
 
-   		 Declares an ArrayList that stores Pet objects only
+   		 Declares an ArrayList that stores Pet objects only.
     
     ---> new ArrayList<Pet>()
 
-   		 Creates a new empty ArrayList that will hold Pet objects
+   		 Creates a new empty ArrayList that will hold Pet objects.
    
 
 10. Pet aPet = new Pet();   **VS**   aPet = new Rabbit();   **VS**   pets.add(aPet);
