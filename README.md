@@ -36,13 +36,15 @@ This project helped me strengthen my understanding of OOP and improved my confid
    
    ---> This declares a subclass Rabbit that extends the Pet class.
    
-   ---> The extends keyword means Rabbit inherits all the properties and methods of Pet. 
+   ---> The extends keyword means Rabbit inherits all the properties and methods of Pet.
+   
    
 2. private：
 
    private String name;
    
    ---> means the variable can only be accessed within the (Pet) class
+   
 
 3. Void: 
 
@@ -52,20 +54,22 @@ This project helped me strengthen my understanding of OOP and improved my confid
    
    ---> allows other classes to set the value of coatColor
    
+   
 4. Why I did not need to create a constructor in pet class, but some assignment I need?
    
    It’s because fields like name, weight, and others don’t need to be initialized beforehand in this assignment, we set each pet’s name later by typing it in the console. Besides, Java 	   will automatically provide a pre-defined constructor (e.g., null, 0), so a constructor isn't needed.
+   
 
-5. Getter method:  
+5. Getter method:
 
    public String getNaame(){
-   
       return name;            
    }
 
-  ---> Getter method does not need an input parameters, but will return the current value of a field.
-  
-  ---> Before calling a getter, that field must already have a value, usually assigned by a constructor or setter method.
+   ---> Getter method does not need an input parameters, but will return the current value of a field.
+
+   ---> Before calling a getter, that field must already have a value, usually assigned by a constructor or setter method.
+
   
 6. Setter methods：
 
@@ -76,6 +80,7 @@ This project helped me strengthen my understanding of OOP and improved my confid
    --->  Setter method requires an input parameter, and assigns it to the object's field, so it's no return.
 
    --->  It updates the field's value so that the getter can later return it.
+
 
 7. Override methods:
 
@@ -91,6 +96,7 @@ This project helped me strengthen my understanding of OOP and improved my confid
 
    ---> Rabbit class inherit all method from Pet class, include the speak method. Now overrided the speak method
 
+
 8. java.util;
 
    import java.util.*;
@@ -100,6 +106,7 @@ This project helped me strengthen my understanding of OOP and improved my confid
    ---> java.util is a utility package that includes many helpful classes such as Scanner, ArrayList, Random, Collections, HashMap, HashSet, etc.
 
    ---> The asterisk * means “import all classes in the java.util package.
+
    
 9. ArrayList:
     
@@ -116,7 +123,7 @@ This project helped me strengthen my understanding of OOP and improved my confid
    		 Creates a new empty ArrayList that will hold Pet objects
    
 
-11. Pet aPet = new Pet();   **VS**   aPet = new Rabbit();   **VS**   pets.add(aPet);
+10. Pet aPet = new Pet();   **VS**   aPet = new Rabbit();   **VS**   pets.add(aPet);
     
     ---> Pet aPet = new Pet();
 
@@ -130,10 +137,10 @@ This project helped me strengthen my understanding of OOP and improved my confid
 
  	---> pets.add(aPet);
 
-		 Add the current pet object (aPet, which was just assigned a name and specific pet type) to the pets list so that every entered pet is stored in the ArrayList.
+		 Add the current pet object (aPet, which was just assigned a name and specific pet type) to the pets list so that every entered pet is stored in the ArrayList.	
+
 	
-    
-12. while loop with multiple if-else ：
+11. while loop with multiple if-else ：
 
     while (true) {
     
@@ -163,6 +170,7 @@ This project helped me strengthen my understanding of OOP and improved my confid
     
 }
 
+
 12. break;
 
     if (name.equalsIgnoreCase("STOP"))
@@ -170,6 +178,7 @@ This project helped me strengthen my understanding of OOP and improved my confid
     break;
 
     --> If we type “STOP” (Stop/ stop/ STOP), it runs a break and immediately ends the while loop.
+       
 
 13. for-each loop:
 
