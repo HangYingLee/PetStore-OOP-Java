@@ -1,5 +1,5 @@
 PetStore-OOP-Java
-Hi, This is a simple Java project created for CS210 at Bellevue College to demonstrate OOP concepts. It includes classes for different pets (Rabbit, Betta Fish) and a PetStore main class that manages them.
+Hi, This is a simple Java project created for CS210 at Bellevue College to demonstrate OOP concepts. It includes classes for different pets (Rabbit, Betta Fish) and a PetStore main class that manages them. ^0^
 ---
 
 ## Project Overview
@@ -28,7 +28,7 @@ This project helped me strengthen my understanding of OOP and improved my confid
 
 ---
 
-## My note and tips for coding
+## My Notes and Tips for Coding
 
 1. extends：
    
@@ -65,9 +65,8 @@ This project helped me strengthen my understanding of OOP and improved my confid
 
   ---> Getter method does not need an input parameters, but will return the current value of a field.
   
-
   ---> Before calling a getter, that field must already have a value, usually assigned by a constructor or setter method.
-
+  
 6. Setter methods：
 
    public void setName(String name) {   
@@ -100,7 +99,7 @@ This project helped me strengthen my understanding of OOP and improved my confid
 
    ---> java.util is a utility package that includes many helpful classes such as Scanner, ArrayList, Random, Collections, HashMap, HashSet, etc.
 
-        The asterisk * means “import all classes in the java.util package.
+   ---> The asterisk * means “import all classes in the java.util package.
    
 9. ArrayList:
     
@@ -108,14 +107,16 @@ This project helped me strengthen my understanding of OOP and improved my confid
 
     ---> **ArrayList** is a resizable array. It can grow or shrink automatically as we add or remove elements.
     
-    
-    ---> ArrayList<Pet>       --->  Declares an ArrayList that stores Pet objects only
-    
-    
-    ---> new ArrayList<Pet>() ---> Creates a new empty ArrayList that will hold Pet objects
-    
+    ---> ArrayList<Pet>
 
-10. Pet aPet = new Pet();   **VS**   aPet = new Rabbit();   **VS**   pets.add(aPet);
+   		 Declares an ArrayList that stores Pet objects only
+    
+    ---> new ArrayList<Pet>()
+
+   		 Creates a new empty ArrayList that will hold Pet objects
+   
+
+11. Pet aPet = new Pet();   **VS**   aPet = new Rabbit();   **VS**   pets.add(aPet);
     
     ---> Pet aPet = new Pet();
 
@@ -132,7 +133,7 @@ This project helped me strengthen my understanding of OOP and improved my confid
 		 Add the current pet object (aPet, which was just assigned a name and specific pet type) to the pets list so that every entered pet is stored in the ArrayList.
 	
     
-11. while loop with multiple if-else ：
+12. while loop with multiple if-else ：
 
     while (true) {
     
