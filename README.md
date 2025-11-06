@@ -29,6 +29,7 @@ This project helped me strengthen my understanding of OOP and improved my confid
 ---
 
 ## My note and tips for coding
+
 1. extends：
    
    Class Pet { vs class Rabbit extends Pet{
@@ -53,16 +54,17 @@ This project helped me strengthen my understanding of OOP and improved my confid
    
 4. Why I did not need to create a constructor in pet class, but some assignment I need?
    
-   It’s because fields like name, weight, and others don’t need to be initialized beforehand in this assignment, we set each pet’s name later by typing it in the console.
-   Besides, Java will automatically provide a pre-defined constructor (e.g., null, 0), so a constructor isn't needed.
+   It’s because fields like name, weight, and others don’t need to be initialized beforehand in this assignment, we set each pet’s name later by typing it in the console. Besides, Java 	   will automatically provide a pre-defined constructor (e.g., null, 0), so a constructor isn't needed.
 
 5. Getter method:  
 
-   public String getNaame(){   
+   public String getNaame(){
+   
       return name;            
    }
 
   ---> Getter method does not need an input parameters, but will return the current value of a field.
+  
 
   ---> Before calling a getter, that field must already have a value, usually assigned by a constructor or setter method.
 
@@ -90,7 +92,9 @@ This project helped me strengthen my understanding of OOP and improved my confid
 
    ---> Rabbit class inherit all method from Pet class, include the speak method. Now overrided the speak method
 
-8. import java.util.*; 
+8. java.util;
+
+   import java.util.*;
 
    ---> When we use ArrayList and Scanner, we have to write this code
 
@@ -98,7 +102,7 @@ This project helped me strengthen my understanding of OOP and improved my confid
 
         The asterisk * means “import all classes in the java.util package.
    
-10. ArrayList:
+9. ArrayList:
     
     ArrayList<Pet> pets = new ArrayList<Pet>();
 
@@ -111,32 +115,54 @@ This project helped me strengthen my understanding of OOP and improved my confid
     ---> new ArrayList<Pet>() ---> Creates a new empty ArrayList that will hold Pet objects
     
 
-12. Pet aPet = new Pet();
-
-    ---> Declares a generic Pet object. Based on later user input, **aPet is overwritten with a specific pet type** (Cat, Dog, Rabbit, or Betta_fish).
-
-    ---> This allows the **same variable to reference different objects**, taking advantage of polymorphism.
+10. Pet aPet = new Pet();   **VS**   aPet = new Rabbit();   **VS**   pets.add(aPet);
     
-13. while loop with multiple if-else ：
+    ---> Pet aPet = new Pet();
+
+         Declaring a variable named aPet of type Pet and creating a Pet object in memory.
+
+	---> aPet = new Rabbit();
+    
+		 It's not declaring a new variable, just assigning a new object to the existing variable aPet.
+
+		 For example, the object I created is a Rabbit, which is a subclass of Pet.
+
+ 	---> pets.add(aPet);
+
+		 Add the current pet object (aPet, which was just assigned a name and specific pet type) to the pets list so that every entered pet is stored in the ArrayList.
+	
+    
+11. while loop with multiple if-else ：
 
     while (true) {
+    
     // ask for user input
+    
     if (stop condition) break;
 
     if (condition 1) {
+    
         // do something
+    
     } else if (condition 2) {
+    
         // do something
+    
     } else if (condition 3) {
+    
         // do something
+    
     } else {
+    
         // handle invalid input
+    
     }
 
     // final actions
+    
 }
 
-14. break;
+12. break;
 
     if (name.equalsIgnoreCase("STOP"))
     
@@ -144,18 +170,14 @@ This project helped me strengthen my understanding of OOP and improved my confid
 
     --> If we type “STOP” (Stop/ stop/ STOP), it runs a break and immediately ends the while loop.
 
-    
+13. for-each loop:
+
+	for (Pet pet : pets) {
+
+	---> It retrieves each Pet object from the pets list, one by one. The loop will continue until all pets have been processed. 
+
+
  
-
-
-
- 
-
-
-
-
-
-
 
 ---
 Author: Hang Ying Lee (Ashley)
