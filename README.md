@@ -30,32 +30,35 @@ This project helped me strengthen my understanding of OOP and improved my confid
 
 ## My note and tips for coding
 1. extends
-   Class Pet { vs class Rabbit extends Pet{  ---> This declares a subclass Rabbit that extends the Pet class.
-                                             ---> The extends keyword means Rabbit inherits all the properties and methods of Pet. 
+   Class Pet { vs class Rabbit extends Pet{
+   ---> This declares a subclass Rabbit that extends the Pet class.
+   ---> The extends keyword means Rabbit inherits all the properties and methods of Pet. 
    
-2. private
-   private String name;  ---> means the variable can only be accessed within the (Pet) class
+3. private
+   private String name;
+   ---> means the variable can only be accessed within the (Pet) class
 
-3. Void: 
-  Public viod setCoatColar (Striing newCoatColar){    ---> allows other classes to set the value of coatColor  
+4. Void: 
+  Public viod setCoatColar (Striing newCoatColar){    
     coatColar = newCoatColar 
   } 
+   ---> allows other classes to set the value of coatColor
    
-4. Why I did not need to create a constructor in pet class, but some assignment I need?
-   It's because 'name' doesn't need to be initialized beforehand in this assignment, we set each pet’s name later by typing it in the console.
+6. Why I did not need to create a constructor in pet class, but some assignment I need?
+   It’s because fields like name, weight, and others don’t need to be initialized beforehand in this assignment, we set each pet’s name later by typing it in the console.
    Besides, Java will automatically provide a pre-defined constructor (e.g., null, 0), so a constructor isn't needed.
    
-5. Getter method:  
+7. Getter method:  
   public String getNaame(){   ---> Getter method does not need an input parameters, but will return the current value of a field.
     return name;              ---> **Before calling a getter, that field must already have a value, usually assigned by a constructor or setter method.**
 
   }
-6. public void setName(String name) {    --->  Setter method requires an input parameter, and assigns it to the object's field, so it's no return.
+7. public void setName(String name) {    --->  Setter method requires an input parameter, and assigns it to the object's field, so it's no return.
     this.name = name;                    --->  It updates the field's value so that the getter can later return it.
   }                                    
 
-7. Override methods:
-    
+8. Override methods:
+   
 
 
  
