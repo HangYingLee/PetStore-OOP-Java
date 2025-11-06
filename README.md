@@ -30,19 +30,20 @@ This project helped me strengthen my understanding of OOP and improved my confid
 
 ## My note and tips for coding
 1. extends：
+   
    Class Pet { vs class Rabbit extends Pet{
    
    ---> This declares a subclass Rabbit that extends the Pet class.
    
    ---> The extends keyword means Rabbit inherits all the properties and methods of Pet. 
    
-3. private：
+2. private：
 
    private String name;
    
    ---> means the variable can only be accessed within the (Pet) class
 
-4. Void: 
+3. Void: 
 
    Public viod setCoatColar (Striing newCoatColar){    
     coatColar = newCoatColar 
@@ -50,20 +51,20 @@ This project helped me strengthen my understanding of OOP and improved my confid
    
    ---> allows other classes to set the value of coatColor
    
-5. Why I did not need to create a constructor in pet class, but some assignment I need?
+4. Why I did not need to create a constructor in pet class, but some assignment I need?
    
    It’s because fields like name, weight, and others don’t need to be initialized beforehand in this assignment, we set each pet’s name later by typing it in the console.
    Besides, Java will automatically provide a pre-defined constructor (e.g., null, 0), so a constructor isn't needed.
 
-6. Getter method:  
+5. Getter method:  
 
    public String getNaame(){   
       return name;            
-  }
+   }
 
   ---> Getter method does not need an input parameters, but will return the current value of a field.
 
-  ---> **Before calling a getter, that field must already have a value, usually assigned by a constructor or setter method.
+  ---> Before calling a getter, that field must already have a value, usually assigned by a constructor or setter method.
 
 6. Setter methods：
 
@@ -75,10 +76,75 @@ This project helped me strengthen my understanding of OOP and improved my confid
 
    --->  It updates the field's value so that the getter can later return it.
 
-8. Override methods:
+7. Override methods:
+
+   public String speak() {
+		return "I'm your cuddly little pet.";
+	}
+
+   VS
+
+   public String speak() {
+		return "I am a rabbit.";
+	}
+
+   ---> Rabbit class inherit all method from Pet class, include the speak method. Now overrided the speak method
+
+8. import java.util.*; 
+
+   ---> When we use ArrayList and Scanner, we have to write this code
+
+   ---> java.util is a utility package that includes many helpful classes such as Scanner, ArrayList, Random, Collections, HashMap, HashSet, etc.
+
+        The asterisk * means “import all classes in the java.util package.
    
+10. ArrayList:
+    
+    ArrayList<Pet> pets = new ArrayList<Pet>();
 
+    ---> **ArrayList** is a resizable array. It can grow or shrink automatically as we add or remove elements.
+    
+    
+    ---> ArrayList<Pet>       --->  Declares an ArrayList that stores Pet objects only
+    
+    
+    ---> new ArrayList<Pet>() ---> Creates a new empty ArrayList that will hold Pet objects
+    
 
+12. Pet aPet = new Pet();
+
+    ---> Declares a generic Pet object. Based on later user input, **aPet is overwritten with a specific pet type** (Cat, Dog, Rabbit, or Betta_fish).
+
+    ---> This allows the **same variable to reference different objects**, taking advantage of polymorphism.
+    
+13. while loop with multiple if-else ：
+
+    while (true) {
+    // ask for user input
+    if (stop condition) break;
+
+    if (condition 1) {
+        // do something
+    } else if (condition 2) {
+        // do something
+    } else if (condition 3) {
+        // do something
+    } else {
+        // handle invalid input
+    }
+
+    // final actions
+}
+
+14. break;
+
+    if (name.equalsIgnoreCase("STOP"))
+    
+    break;
+
+    --> If we type “STOP” (Stop/ stop/ STOP), it runs a break and immediately ends the while loop.
+
+    
  
 
 
